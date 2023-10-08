@@ -1,0 +1,39 @@
+.scoreboard {
+    @include dflex(space-between, flex-start);
+    @include widthauto(90%);
+    margin-top: 50px;
+
+
+    &__desc {
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__description {
+
+
+
+            &>span {
+                font-weight: bolder;
+            }
+        }
+
+        
+    }
+
+    &__score {
+        @include dflex(flex-start, center, column, nowrap);
+        background-color: $color-main-medium;
+        padding: $padding-s $padding-m;
+        border-radius: 8px;
+
+        &__title {
+            margin-bottom: $margin-s;
+        }
+
+        &__number {
+            font-weight: bold;
+        }
+    }
+}
